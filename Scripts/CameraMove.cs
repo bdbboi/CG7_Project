@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem; // New Input System을 사용하는 경우 필요
-//제미나이사용
+//제미나이사. 변수수정
 public class CameraMove : MonoBehaviour
 {
     // 이동 속도 (값이 클수록 목표에 빨리 도달)
@@ -44,13 +44,12 @@ public class CameraMove : MonoBehaviour
             );
             
             
-            // 만약 'else' 블록에서 아무런 이동을 하지 않으려면 비워둡니다.
         }
 
-        // 1.0f보다 더 내려가지 않도록 강제로 위치를 고정할 수 있습니다.
         if (transform.position.y < targetYPosition)
         {
             transform.position = new Vector3(transform.position.x, targetYPosition, transform.position.z);
         }
     }
 }
+
