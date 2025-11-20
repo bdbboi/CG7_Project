@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
+//추가로 작성
     void CheckGroundStatus()
     {
         // GroundCheck 위치에서 groundDistance만큼의 구를 생성하여 지면 마스크와 충돌하는지 확인
@@ -156,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, groundDistance);
         }
     }
-    
+    //ui적용후 삭제
    /* void OnGUI()
     {
         // 1. 크로스헤어
@@ -175,3 +175,4 @@ public class PlayerMovement : MonoBehaviour
         GUI.Label(new Rect(10, 10, 300, 50), debugText, style);
     }*/
 }
+
